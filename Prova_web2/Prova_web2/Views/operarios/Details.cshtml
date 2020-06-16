@@ -1,0 +1,74 @@
+﻿@model Prova_web2.Models.operario
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>operario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Sexo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sexo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Endereco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Endereco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CarteraT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarteraT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fonef)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fonef)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fonec)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fonec)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Nome }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
